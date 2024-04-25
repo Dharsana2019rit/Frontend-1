@@ -1,0 +1,23 @@
+/* TableBookings.css */
+.table-bookings-container-admin {
+    padding: 20px;
+    margin-left: 225px;
+  }
+  
+  .table-card-container-admin {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .table-card-admin {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Two cards per row */
+  }
+  
+  .table-card-admin h3 {
+    margin-top: 0;
+  }
+  

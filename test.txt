@@ -1,0 +1,11 @@
+      const bookedTables = await getBookedTables();
+
+      // Check if bookedTables is an array and has at least one element
+      if (Array.isArray(bookedTables) && bookedTables.length > 0) {
+        // Check if the selected table is already booked
+        const selectedTableBooking = bookedTables.find(booking => booking.tableNumber === table.tableNumber);
+        if (selectedTableBooking && selectedTableBooking.isBooked) {
+          setError('Sorry, this table is already booked.');
+          return;
+        }
+      }

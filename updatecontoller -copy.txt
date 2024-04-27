@@ -1,0 +1,18 @@
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateTableBooking(int id, TableBooking tableBooking)
+        {
+            try
+            {
+                if (id != tableBooking.TableBookingId)
+                {
+                    return BadRequest("Table booking ID mismatch.");
+                }
+
+                await _tableBookingService.UpdateTableBookingAsync(tableBooking);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.homepage-container {
+  display: flex;
+  align-items: stretch; /* Make side panel and main content stretch to fit the height */
+  overflow: hidden;
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+  background-color: #f8f9fa; /* Set background color */
+  border-left: 1px solid #dddddd;
+  margin-left: 220px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  margin-left: -10px; /* Center content vertically */
+  min-height: 713px;
+  background-image: url('log-sign-bg.jpg');
+}
+
+/* HomePage.css */
+
+/* Style for the h1 element */
+.main-content h1 {
+  font-size: 36px;
+  color: #141414;
+  margin-bottom: 20px;
+  margin-left:200px;
+  background-color: azure;
+  border-radius: 30px;
+  padding: 30px;
+  font-family: "Dancing Script", cursive;
+
+}
+
+/* Style for the p elements */
+.main-content p {
+  font-size: 18px;
+  color: #e7e7e7;
+  margin-bottom: 15px;
+}
+
+/* Style for the h2 element */
+.main-content h2 {
+  font-size: 24px;
+  color: #e7e7e7;
+  margin-bottom: 10px;
+}
+
+/* Style for the ul element */
+.main-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the li elements */
+.main-content li {
+  font-size: 18px;
+  color: #e7e7e7;
+  margin-bottom: 5px;
+}
+
+/* Style for the links */
+.main-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+
